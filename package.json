@@ -1,0 +1,12 @@
+{
+  "name": "com.trashpandaboy.instances",
+  "version": "1.0.0",
+  "displayName": "TPInstances",
+  "description": "A simple library of tools to manage instances of objects in Unity",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "author": {
+    "name": "TrashPandaBoy",
+    "url": "https://github.com/trashpandaboy"
+  }
+}
