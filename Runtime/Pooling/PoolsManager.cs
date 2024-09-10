@@ -4,7 +4,7 @@ using System;
 
 namespace com.trashpandaboy.instances.Pooling
 {
-    public class PoolsManager : Manager<PoolsManager>
+    public class PoolsManager : Service<PoolsManager>
     {
         /// <summary>
         /// Prefab of the ObjectPool

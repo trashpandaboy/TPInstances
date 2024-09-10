@@ -6,7 +6,7 @@ namespace com.trashpandaboy.instances
     /// Base class for services that are used to manage the game.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class Service<T> : MonoBehaviour where T : Manager<T>
+    public class Service<T> : MonoBehaviour where T : Service<T>
     {
         /// <summary>
         /// If true, the service will be a singleton.
