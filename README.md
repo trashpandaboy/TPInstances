@@ -4,15 +4,7 @@ TPInstances is a simple library for managing object instances in Unity. It provi
 
 ## Installation
 
-To install TPInstances, add the following dependency to your `manifest.json` file in Unity:
-
-```json
-{
-  "dependencies": {
-    "com.trashpandaboy.instances": "1.0.0"
-  }
-}
-```
+To install TPInstances, please use the UnityPackageManager
 
 ## Usage
 
@@ -112,8 +104,3 @@ If you want to contribute to TPInstances, feel free to fork the repository and s
 ## License
 
 This project is licensed under the Unlicense. For more details, see the `LICENSE` file.
-
-## Author
-
-TPInstances is developed by [TrashPandaBoy](https://github.com/trashpandaboy).
-```
