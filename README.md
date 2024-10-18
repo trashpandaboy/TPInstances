@@ -86,14 +86,47 @@ The [`ServiceLocator`](command:_github.copilot.openSymbolFromReferences?%5B%22%2
 #### Example Usage
 
 ```csharp
-// Registering a service
-ServiceLocator.Register<MyService>(new MyService());
 
-// Retrieving a service
-var myService = ServiceLocator.Get<MyService>();
+using com.trashpandaboy.instances;
+using UnityEngine;
 
-// Unregistering a service
-ServiceLocator.Unregister<MyService>();
+public class MyService : MonoBehaviour
+{
+
+    void Start()
+    {
+        // Registering a service
+        ServiceLocator.Instance.AddService(this);
+    }
+
+    void OnDestory()
+    {
+        // Unregistering a service  
+        ServiceLocator.Instance.RemoveService<MyService>();
+    }
+}
+
+```
+
+```csharp
+using com.trashpandaboy.instances;
+using UnityEngine;
+
+public class SomeObject : MonoBehaviour
+{
+    MyService myService;
+
+    void Start()
+    {
+        if(ServiceLocator.Instance.HasService<MyService>())
+        {
+            // Retrieving a service
+            myService = ServiceLocator.Instance.GetServiceInstance<MyService>();
+        }
+    }
+
+}
+
 ```
 
 
